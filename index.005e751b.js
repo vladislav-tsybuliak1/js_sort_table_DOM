@@ -1,0 +1,2 @@
+document.querySelectorAll("thead th").forEach(function(e){e.addEventListener("click",function(){var t=e.cellIndex,r=document.querySelector("table tbody"),a=Array.from(r.rows);a.sort(function(e,r){var a=e.cells[t].textContent.trim(),l=r.cells[t].textContent.trim();return isNaN(a.replace(/[$,]/g,""))||isNaN(l.replace(/[$,]/g,""))?a.localeCompare(l):(a=parseFloat(a.replace(/[$,]/g,"")))-(l=parseFloat(l.replace(/[$,]/g,"")))}),a.forEach(function(e){return r.appendChild(e)})})});
+//# sourceMappingURL=index.005e751b.js.map
